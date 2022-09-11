@@ -218,10 +218,14 @@ input:checked ~ .bubble::after {
 
 .todo-item .actions .edit {
   margin-right: 0.5rem;
-  background-color: pink;
+  background-color: var(--primary);
 }
 
 .todo-item .actions .delete {
-  margin-right: 0.5rem;
   background-color: var(--danger);
+}
+
+.todo-item.done .todo-content input{
+  text-decoration: line-through;
+  color: var(--grey);
 }
