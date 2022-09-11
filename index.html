@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Lover's  List</title>
+    <title>Cat Lover's List With Local Storage</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&display=swap');
@@ -13,7 +12,6 @@
 
     <link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
     <main class="app">
 
@@ -26,7 +24,7 @@
         <section class="create-todo">
             <h3>CREATE A TODO</h3>
 
-            <from id="new-todo-form">
+            <form id="new-todo-form">
                 <h4>What's on your todo list today?</h4>
                 <input type="text" name="content" id="content" placeholder="e.g. Feed Mr Whiskers" />
 
@@ -40,7 +38,7 @@
                     </label>
 
                     <label>
-                        <input type="radio" name="category" id="category2" value="" />
+                        <input type="radio" name="category" id="category2" value="personal" />
                         <span class="bubble personal"></span>
                         <div>Personal</div>
                     </label>
@@ -48,7 +46,8 @@
                 </div>
 
                 <input type="submit" value="Add todo" />
-            </from>
+                <div class="Add todo"></div>
+            </form>
         </section>
 
 
