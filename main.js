@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     const nameInput = document.querySelector("#name");
-    const newTodoForm = document.querySelector('#new.todo-form');
+    const newTodoForm = document.querySelector('#new-todo-form');
 
     const username = localStorage.getItem('username') || '';
 
@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 
         todos.push(todo);
 
-        localStorage.setItem('todos', JSON.stringify(todo - list));
+        localStorage.setItem('todos', JSON.stringify(todos));
 
         e.target.reset();
 
@@ -38,7 +38,7 @@ function DisplayTodos() {
 
     todoList.innerHTML = '';
 
-    todos.forEach(todo => {
+    todos.forEach(todo => { //TODO.SORT(ETC)!!!
         const todoItem = document.createElement('div');
         todoItem.classList.add('todo-item')
 
