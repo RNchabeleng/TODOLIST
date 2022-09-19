@@ -1,6 +1,6 @@
 /*Variables*/
 :root {
-  --primary: #ea40a4;
+  --primary: #fc6c85;
   --business: #3a82ee;
   --personal: var(--primary);
   --light: #eee;
@@ -47,14 +47,14 @@ section {
 h3 {
   color: var(--dark);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 h4 {
   color: var(--primary);
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
